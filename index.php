@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ustacky Dictionary</title>
+    <title>My Dictionary</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
@@ -283,7 +283,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="index.php" id="logo" style="font-family:monospace;">My Dictionary/a>
+          <a class="navbar-brand" href="index.php" id="logo" style="font-family:monospace;">My Dictionary</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
