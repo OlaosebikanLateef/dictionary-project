@@ -1,9 +1,9 @@
 <?php
-$servername = "localhost";
+$serverName = "localhost";
 $username = "root";
-$password = "smoothless";
+$password = "Lateef";
 $dbname = "dictionary";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($serverName, $username, $password, $dbname);
 
 if(!$conn){
     die("connection failed: ". mysqli_connect_error());
