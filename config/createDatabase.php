@@ -30,14 +30,31 @@ function checkIfTableExist(){
                     continue;
                 }
                 $importSQL = "INSERT INTO dictionary_resource VALUES ('".$line[0]."','".$line[1]."','".$line[2]."')";
+                mysqli_query($conn, $importSQL);
             }
-
+            fclose($filePath);
         }
-    } else{
-        echo "noExist";
+    }else{
+        $createTable = "CREATE TABLE dictionary_resource(
+            id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(30) NOT NULL,
+            meaning TEXT NOT NULL
+        )";
+        if(mysqli_query($conn, $checkTable)){
+            $path = "../csv/dictionary.csv";
+            $filePath = fopen($path, "r");
+            while(!feof($filePath)){
+                if(!$line = fgetcsv($filePath)){
+                    continue;
+                }
+                $importSQL = "INSERT INTO dictionary_resource VALUES ('".$line[0]."','".$line[1]."','".$line[2]."')";
+                mysqli_query($conn, $importSQL);
+            }
+            fclose($filePath);
+        }
+     }
     }
-}
-checkIfDatabaseExist();
-checkIfTableExist();
+    checkIfDatabaseExist();
+    checkIfTableExist();
 
 ?>
