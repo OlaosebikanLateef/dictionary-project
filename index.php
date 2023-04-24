@@ -309,7 +309,7 @@
              </div>
              <div class="col-md-4 col-sm-4">
               <div class="form-group">
-               <button type="button"  class="btn btn-warning btn-md" id="submitButton" style="font-weight:bold;font-size:16px" >Search</button>        
+               <button type="button"  class="btn btn-warning btn-md" id="submitButton" style="font-weight:bold;font-size:16px" onclick="submitSearchAjax()">Search</button>        
               </div> 
              </div>              
           </form>
@@ -319,7 +319,8 @@
      <div class="col-md-6 col-sm-6 alert alert-danger" id="searchMessage" style="padding-top:20px;display:none"></div>
     </div>
     <span class="footer">
-      <p style="margin-top:15px;font-family:monospace">All right reserved @Ustacky <?php echo date('Y') ?></p>
+      <p style="margin-top:15px;font-family:monospace">All right reserved @Ogbeni_Lateef <?php echo date('Y') ?></p>
     </span>
+    <script src="Bootstrap/js/mainscript.js"></script>
   </body>
 </html>
